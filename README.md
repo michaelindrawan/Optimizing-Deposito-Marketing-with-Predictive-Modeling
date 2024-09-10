@@ -223,7 +223,10 @@ Pendekatan analisis menggunakan machine learning untuk menentukan nasabah potens
 ### 14.2 Menampilkan Hasil Model Terbaik
 - **Proses**:
   - Menampilkan metrik evaluasi dari model yang berkinerja terbaik setelah pengurutan untuk analisis akhir.
-  - Menyimpan objek model terbaik ke dalam file biner dengan nama yang diambil dari `model_DF.model_name` menggunakan format pickle.
+
+### 14.3 Menyimpan Model Terbaik
+- **Proses**:
+  - Menyimpan objek model terbaik ke dalam file biner dengan nama yang diambil dari `model_DF.model_name` menggunakan format pickle
  
 ### 14.3 Analisis Hasil Model Berdasarkan Metrik Penting
 - **Macro F1-Score Tertinggi**: Model `BEST_ensemble_models_byVoting_PCA` dan `BEST_xgb_PCAResampled` (0.72).
