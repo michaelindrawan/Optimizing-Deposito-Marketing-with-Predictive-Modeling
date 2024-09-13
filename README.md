@@ -263,9 +263,9 @@ Pendekatan analisis menggunakan machine learning untuk menentukan nasabah potens
 
 1. Model **BEST_ensemble_models_byVoting_PCA** menunjukkan performa yang solid dalam mendeteksi nasabah non-deposito, dengan recall mencapai 84.3%. Ini mengindikasikan kemampuan model dalam menangkap sebagian besar nasabah non-deposito dan mengurangi kesalahan False Negatives. Precision-nya juga tinggi pada nasabah deposito, mencapai 77.7%, menandakan akurasi yang baik dalam mengidentifikasi nasabah deposito. Namun, recall untuk nasabah deposito berada pada 59.9%, menunjukkan adanya ruang untuk perbaikan dalam mendeteksi lebih banyak kasus deposito.
 
-2. Secara keseluruhan, **model ini efektif** dengan **F1-Score rata-rata 71.9%**, yang mencerminkan **keseimbangan yang baik antara precision dan recall**. Model ini dirancang untuk **mengidentifikasi nasabah deposito dan non-deposito dengan efisien**, dan berpotensi **mengurangi biaya akuisisi pelanggan (CAC) hingga 35%**.
-  Dengan **rasio nasabah deposito terhadap non-deposito sekitar 48/52** (riwayat sebelumnya), dan **biaya akuisisi rata-rata USD 88** (berasal dari **focus-digital.co**), penggunaan model ini dapat **menghemat hingga USD 58 per nasabah deposito**, meningkatkan **efisiensi kampanye pemasaran secara signifikan**.
+2. Model ini dapat **mengurangi biaya akuisisi pelanggan (CAC) hingga 35%**. Hal ini disebabkan oleh kemampuannya dalam **mengidentifikasi nasabah deposito dan non-deposito dengan efisien**, yang berdampak langsung pada **penghematan biaya akuisisi per nasabah deposito hingga USD 58**. Dengan **F1-Score rata-rata 71.9%**, model ini menunjukkan **keseimbangan yang baik antara precision dan recall**, menjadikannya alat yang sangat efektif untuk meningkatkan **efisiensi kampanye pemasaran**.
 
+Sebagai perbandingan, riwayat sebelumnya menunjukkan bahwa **rasio nasabah deposito terhadap non-deposito sekitar 48/52**, dengan **rate konversi nasabah deposito hanya 48%**. Dengan menggunakan model ini, kita dapat **mengatasi tantangan konversi yang lebih rendah** dan **mengoptimalkan biaya akuisisi** yang sebelumnya rata-rata USD 88 (berasal dari **focus-digital.co**).
 
 
 
