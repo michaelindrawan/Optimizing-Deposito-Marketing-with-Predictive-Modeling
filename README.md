@@ -261,9 +261,36 @@ Pendekatan analisis menggunakan machine learning untuk menentukan nasabah potens
 
 ### Kesimpulan
 
-Model **BEST_ensemble_models_byVoting_PCA** menunjukkan performa yang solid dalam mendeteksi nasabah non-deposito, dengan recall mencapai 84.3%. Ini mengindikasikan kemampuan model dalam menangkap sebagian besar nasabah non-deposito dan mengurangi kesalahan False Negatives. Precision-nya juga tinggi pada nasabah deposito, mencapai 77.7%, menandakan akurasi yang baik dalam mengidentifikasi nasabah deposito. Namun, recall untuk nasabah deposito berada pada 59.9%, menunjukkan adanya ruang untuk perbaikan dalam mendeteksi lebih banyak kasus deposito.
+1. Model **BEST_ensemble_models_byVoting_PCA** menunjukkan performa yang solid dalam mendeteksi nasabah non-deposito, dengan recall mencapai 84.3%. Ini mengindikasikan kemampuan model dalam menangkap sebagian besar nasabah non-deposito dan mengurangi kesalahan False Negatives. Precision-nya juga tinggi pada nasabah deposito, mencapai 77.7%, menandakan akurasi yang baik dalam mengidentifikasi nasabah deposito. Namun, recall untuk nasabah deposito berada pada 59.9%, menunjukkan adanya ruang untuk perbaikan dalam mendeteksi lebih banyak kasus deposito.
 
-Secara keseluruhan, model ini efektif dengan F1-Score rata-rata 71.9%, yang mencerminkan keseimbangan yang baik antara precision dan recall. Model ini dirancang untuk mengidentifikasi nasabah deposito dan non-deposito dengan efisien, dan berpotensi mengurangi biaya akuisisi pelanggan (CAC) hingga **35%**. Dengan rasio nasabah deposito terhadap non-deposito sekitar 48/52, dan biaya akuisisi rata-rata USD 88, penggunaan model ini dapat menghemat hingga USD 58 per nasabah deposito, meningkatkan efisiensi kampanye pemasaran secara signifikan.
+2. Model Evaluasi dan Efisiensi
+
+#### Kinerja Model
+
+- **F1-Score Rata-rata:** 71.9%
+  - Menunjukkan keseimbangan yang baik antara **Precision** dan **Recall**.
+
+#### Tujuan Model
+
+- **Identifikasi Nasabah:**
+  - Membedakan antara nasabah deposito dan non-deposito.
+  - Dirancang untuk **efisiensi** dalam identifikasi.
+
+#### Pengurangan Biaya
+
+- **Potensi Pengurangan Biaya Akuisisi Pelanggan (CAC):** Hingga **35%**
+  - **Biaya Akuisisi Rata-rata:** USD 88 per nasabah.
+  - **Hemat Per Nasabah Deposito:** Hingga USD 58.
+  
+#### Rasio Nasabah
+
+- **Rasio Nasabah Deposito terhadap Non-Deposito:** 48/52
+  - Menunjukkan distribusi yang hampir seimbang antara kedua kategori nasabah.
+
+#### Dampak
+
+- **Peningkatan Efisiensi Kampanye Pemasaran:**
+  - Penggunaan model ini dapat **meningkatkan efisiensi** secara signifikan.
 
 ### Rekomendasi
 
