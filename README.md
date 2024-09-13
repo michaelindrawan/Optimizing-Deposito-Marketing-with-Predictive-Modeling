@@ -265,7 +265,7 @@ Pendekatan analisis menggunakan machine learning untuk menentukan nasabah potens
 
 2. Model ini dapat **mengurangi biaya akuisisi pelanggan (CAC) hingga 35%**. Hal ini disebabkan oleh kemampuannya dalam **mengidentifikasi nasabah deposito dan non-deposito dengan efisien**, yang berdampak langsung pada **penghematan biaya akuisisi per nasabah deposito hingga USD 58**. Dengan **F1-Score rata-rata 71.9%**, model ini menunjukkan **keseimbangan yang baik antara precision dan recall**, menjadikannya alat yang sangat efektif untuk meningkatkan **efisiensi kampanye pemasaran**.
 
-Sebagai perbandingan, riwayat sebelumnya menunjukkan bahwa **rasio nasabah deposito terhadap non-deposito sekitar 48/52**, dengan **rate konversi nasabah deposito hanya 48%**. Dengan menggunakan model ini, kita dapat **mengatasi tantangan konversi yang lebih rendah** dan **mengoptimalkan biaya akuisisi** yang sebelumnya rata-rata USD 88 (berasal dari **focus-digital.co**).
+    Sebagai perbandingan, riwayat sebelumnya menunjukkan bahwa **rasio nasabah deposito terhadap non-deposito sekitar 48/52**, dengan **rate konversi nasabah deposito hanya 48%**. Dengan menggunakan model ini, kita dapat **mengatasi tantangan konversi yang lebih rendah** dan **mengoptimalkan biaya akuisisi** yang sebelumnya rata-rata USD 88 (berasal dari **focus-digital.co**).
 
 
 
