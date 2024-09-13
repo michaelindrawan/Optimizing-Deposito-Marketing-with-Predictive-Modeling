@@ -259,12 +259,31 @@ Pendekatan analisis menggunakan machine learning untuk menentukan nasabah potens
 
 
 
-### **Kesimpulan**
+### Kesimpulan
 
-1. **BEST_ensemble_models_byVoting_PCA** menunjukkan kinerja yang baik dalam mendeteksi nasabah non-deposito dengan recall 84.3% dan precision 77.7% untuk nasabah deposito. Namun, recall untuk nasabah deposito (59.9%) bisa diperbaiki. Model ini memberikan F1-Score rata-rata 71.9%, menunjukkan keseimbangan antara precision dan recall. Model ini menggabungkan berbagai algoritma (Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, XGBoost) dan menggunakan PCA untuk reduksi dimensi. Model ini dirancang untuk data dengan rentang umur 18-95 tahun, saldo -6847 hingga 66653, jumlah kontak 1 hingga 63, dan hari sejak kontak terakhir -1 hingga 854. Data kategorikal harus sesuai dengan nilai yang telah ditentukan.
+Model **BEST_ensemble_models_byVoting_PCA** menunjukkan performa yang solid dalam mendeteksi nasabah non-deposito, dengan recall mencapai 84.3%. Ini mengindikasikan kemampuan model dalam menangkap sebagian besar nasabah non-deposito dan mengurangi kesalahan False Negatives. Precision-nya juga tinggi pada nasabah deposito, mencapai 77.7%, menandakan akurasi yang baik dalam mengidentifikasi nasabah deposito. Namun, recall untuk nasabah deposito berada pada 59.9%, menunjukkan adanya ruang untuk perbaikan dalam mendeteksi lebih banyak kasus deposito.
 
-### **Rekomendasi**
+Secara keseluruhan, model ini efektif dengan F1-Score rata-rata 71.9%, yang mencerminkan keseimbangan yang baik antara precision dan recall. Model ini dirancang untuk mengidentifikasi nasabah deposito dan non-deposito dengan efisien, dan berpotensi mengurangi biaya akuisisi pelanggan (CAC) hingga 35%. Dengan rasio nasabah deposito terhadap non-deposito sekitar 48/52, dan biaya akuisisi rata-rata USD 88, penggunaan model ini dapat menghemat hingga USD 58 per nasabah deposito, meningkatkan efisiensi kampanye pemasaran secara signifikan.
 
-1. Fokuskan kampanye pemasaran pada kelompok umur 16-28 dan 50-96, dengan saldo antara 3000-12000, dan lakukan satu kontak. Prioritaskan nasabah yang memiliki rentang hari sejak kontak terakhir 40-240 dan 400-840. Targetkan individu dengan pekerjaan retirement, student, unemployed, dan management, serta yang tanpa pinjaman rumah dan pinjaman. Fokuskan kampanye pada bulan Oktober, Maret, April, September, Februari, dan Desember, serta pada hasil kampanye sebelumnya seperti success dan other. Utamakan kontak melalui metode cellular.
+### Rekomendasi
 
-2. Jika data nasabah tidak sesuai dengan kriteria, gunakan teknik machine learning untuk analisis lebih mendalam. Algoritma pembelajaran mesin dapat membantu mengidentifikasi pola yang tidak terlihat dalam analisis tradisional, memungkinkan penyesuaian strategi pemasaran yang lebih efektif.
+Untuk meningkatkan efektivitas kampanye pemasaran deposito, pertimbangkan rekomendasi berikut:
+
+1. **Fokuskan Kampanye Pemasaran:**
+   - **Kelompok Umur:** Targetkan kelompok umur 16-28 dan 50-96, yang menunjukkan kecenderungan lebih tinggi untuk melakukan deposit.
+   - **Saldo:** Pilih nasabah dengan saldo antara 3000-12000.
+   - **Kontak:** Lakukan hanya satu kontak kepada calon nasabah, karena mereka menunjukkan kemungkinan lebih tinggi untuk melakukan deposit.
+   - **Hari Sejak Kontak Terakhir:** Prioritaskan nasabah dengan rentang 40-240 dan 400-840 hari sejak kontak terakhir untuk meningkatkan kemungkinan deposit.
+
+2. **Fitur Kategorikal:**
+   - **Pekerjaan:** Fokuskan pada individu dengan pekerjaan retirement, student, unemployed, dan management.
+   - **Pinjaman:** Targetkan nasabah yang tidak memiliki pinjaman rumah dan pinjaman.
+   - **Bulan:** Lakukan pemasaran intensif pada bulan Oktober, Maret, April, September, Februari, dan Desember.
+   - **Hasil Kampanye Sebelumnya:** Targetkan nasabah dengan hasil kampanye sebelumnya seperti success dan other.
+   - **Metode Kontak:** Utamakan kontak melalui metode cellular, karena metode ini menunjukkan kecenderungan lebih tinggi untuk menghasilkan deposit.
+
+3. **Penyesuaian Data:**
+   - Model ini cocok untuk data dengan rentang umur 18-95 tahun, saldo -6847 hingga 66653, jumlah kontak 1 hingga 63, dan hari sejak kontak terakhir -1 hingga 854. Data di luar rentang ini mungkin memerlukan penyesuaian.
+   - Data kategorikal harus sesuai dengan nilai-nilai yang telah ditentukan seperti pekerjaan ('admin.', 'self-employed', 'services', 'housemaid', 'technician', 'management', 'student', 'blue-collar', 'entrepreneur', 'retired', 'unemployed'), status perumahan ('no', 'yes'), pinjaman ('no', 'yes'), jenis kontak ('cellular', 'telephone', 'unknown'), bulan ('jun', 'apr', 'may', 'nov', 'jan', 'sep', 'feb', 'mar', 'aug', 'jul', 'oct', 'dec'), hasil pemasaran ('failure', 'other', 'success', 'unknown'), dan status deposito ('yes', 'no').
+
+Jika data nasabah tidak sepenuhnya sesuai dengan kriteria rekomendasi, teknik machine learning dapat digunakan untuk analisis lebih mendalam. Algoritma pembelajaran mesin dapat membantu dalam mengidentifikasi pola yang tidak terdeteksi oleh analisis tradisional, memungkinkan penyesuaian strategi pemasaran yang lebih efektif dan pengambilan keputusan yang lebih terinformasi.
