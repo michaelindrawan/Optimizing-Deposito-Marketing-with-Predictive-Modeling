@@ -1,4 +1,4 @@
-# JCDSOL_Machine-Learning
+# Optimizing Deposito Marketing with Predictive Modeling
 
 #### READ ME
 
